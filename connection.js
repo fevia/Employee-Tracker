@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "",
+  password: "Happy!921",
   database: "employeesDB",
 });
 
@@ -30,7 +30,7 @@ const addDREQs = [
     type: "list",
     choices: ["Department", "Role", "Employee"],
     name: "addWhat",
-    message: "What type of entity would you like to add?",
+    message: "What would you like to add?",
   },
 ];
 
@@ -96,13 +96,13 @@ function addRole(departments) {
     {
       type: "number",
       name: "roleSalary",
-      message: "What is the role salary?",
+      message: "What is their salary?",
     },
     {
       type: "list",
       name: "roleDepartment",
       choices: departmentNames,
-      message: "What department does the role belong to?",
+      message: "What department does this role belong to?",
     },
   ];
 
@@ -190,7 +190,7 @@ function addEmployee(roles, employees) {
       type: "list",
       name: "managerName",
       choices: employeeNames,
-      message: "Who does this employee currently report to?",
+      message: "Who is this employee's manager?",
     },
   ];
 
