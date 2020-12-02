@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "Happy!921",
+  password: "",
   database: "employeesDB",
 });
 
@@ -21,7 +21,7 @@ const initQs = [
     ],
     name: "action",
     message:
-      "Welcome to the Abbott Employee Management System. Please select an action.",
+      "Welcome to the Abbott Employee Management System. What would you like to do?",
   },
 ];
 
