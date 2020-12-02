@@ -244,8 +244,6 @@ function addEntity() {
   });
 }
 
-// View Functions
-
 function viewDepartments() {
   connection.query("SELECT id, name AS Department FROM department", function (
     err,
@@ -409,7 +407,6 @@ function finalUpdate(employeeID, managerID, roleID) {
   });
 }
 
-// Init Function
 function init() {
   inquirer.prompt(initQs).then((userAction) => {
     const { action } = userAction;
