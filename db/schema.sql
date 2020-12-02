@@ -1,12 +1,8 @@
--- Drops database nameDB if it already exists -- 
-DROP DATABASE IF EXISTS employeesDB; 
-
--- Creates database and specified it for use --  
+ DROP DATABASE IF EXISTS employeesDB; 
+ 
 CREATE DATABASE employeesDB;
 
 USE employeesDB; 
-
--- Creates the table input --
 
 CREATE TABLE department (
     id INT AUTO_INCREMENT NOT NULL,
@@ -33,7 +29,3 @@ CREATE TABLE employee (
     FOREIGN KEY (role_id) REFERENCES role(id),
     FOREIGN KEY (manager_id) REFERENCES employee(id)
 );
-
--- SELECT * FROM department;
--- SELECT * FROM role;
--- SELECT * FROM employee;
