@@ -6,6 +6,9 @@ Many business owners need to view and manage department, roles, and employees in
 
 Be sure to set up the provided database schema and seeds on MySQL Workbench. Install dependencies and get to tracking!
 
+## At a Glance
+![Employee Tracker](./employeeTracker.png)
+
 ## Built with
 * JavaScript
 * [MySQL](https://www.npmjs.com/package/mysql)
